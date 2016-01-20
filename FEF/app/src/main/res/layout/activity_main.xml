@@ -8,7 +8,9 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.tee.fef.MainActivity">
-
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
@@ -23,8 +25,8 @@
             android:src="@drawable/fates_logo"
             />
         <TextView
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
             android:padding="1dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -34,9 +36,10 @@
 
         <ImageButton
             android:id="@+id/birthrightButton"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:onClick="toggleBirthright"
             android:src="@drawable/banner_birthright"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -86,14 +89,12 @@
             />
         </LinearLayout>
 
-
-
-
         <ImageButton
             android:id="@+id/conquestButton"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="toggleConquest"
+            android:padding="5dp"
             android:src="@drawable/banner_conquest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -147,9 +148,10 @@
 
         <ImageButton
             android:id="@+id/revalationButton"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:onClick="toggleRevalation"
+            android:padding="5dp"
             android:src="@drawable/banner_revelation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
@@ -198,6 +200,17 @@
             />
         </LinearLayout>
 
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="5dp"
+            android:padding="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Still in early developement:\nDisclaimer: [Insert Content]"
+            android:textSize="20dp"
+            />
 
-    </LinearLayout>
+     </LinearLayout>
+
+  </ScrollView>
 </RelativeLayout>
